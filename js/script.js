@@ -16,8 +16,10 @@
             newDiv.style.backgroundColor = backgroundColor.value;
             newDiv.style.margin = margin.value + 'px';
             playground.appendChild(newDiv);
-            console.log(newDiv);
         }
     });
 
+    playground.addEventListener('click',(event)=> {
+        playground.removeChild(event.target);
+    });
 })()
