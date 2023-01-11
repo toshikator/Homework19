@@ -8,6 +8,7 @@
     const playground = document.querySelector('#playground');
 
     document.getElementById('btn_show').addEventListener('click', () => {
+        playground.replaceChildren();
         for (let i = 0; i < Number(count.value); i++) {
             const newDiv = document.createElement('div');
             newDiv.style.width = width.value + 'vw';
